@@ -1,0 +1,135 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 90vh;
+}
+
+/* Left Side */
+.hero-left {
+  background-color: #3b2f2f;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.offer-text {
+  color: orange;
+  font-weight: 600;
+}
+
+/* Countdown */
+.countdown {
+  display: flex;
+  gap: 15px;
+}
+
+.countdown div {
+  background: #444;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.countdown span {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+}
+
+/* Right Side Image */
+.hero-right {
+  background: url('EmmaEden_3789B_1X1copy.webp') center/cover no-repeat;
+  height: 90vh;
+}
+.sleep{
+  background: url('sleep.webp') center/cover no-repeat;
+  height: 90vh;
+}
+
+/* Discount Badge */
+
+
+.discount-badge span {
+  font-size: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+  }
+
+  .hero-right {
+    height: 50vh;
+  }
+
+  .hero-left {
+    height: auto;
+  }
+
+  .countdown {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+
+
+.section-title {
+  font-size: 28px;
+  font-weight: 500;
+  color: #2c2c2c;
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.award-card {
+  background: #fff;
+  border-radius: 16px;
+  text-align: center;
+  min-width: 220px;
+  transition: 0.3s;
+  border: 1px solid #eee;
+}
+
+.award-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+
+.award-title {
+  font-weight: 600;
+  font-size: 15px;
+  color: #333;
+}
+
+.award-sub {
+  font-size: 14px;
+  color: #666;
+}
+
+.scroll-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
